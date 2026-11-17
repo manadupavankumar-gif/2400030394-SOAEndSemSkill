@@ -1,0 +1,29 @@
+
+contract:
+  name: MS1-Addition-Contract
+  version: "1.0"
+
+request:
+  method: GET
+  endpoint: /MS1
+  queryParameters:
+    A:
+      type: integer
+      required: true
+      example: 5
+    B:
+      type: integer
+      required: true
+      example: 0
+
+response:
+  status: 200
+  contentType: application/json
+  body:
+    type: object
+    properties:
+      result:
+        type: integer
+        example: 5
+    required:
+      - result
